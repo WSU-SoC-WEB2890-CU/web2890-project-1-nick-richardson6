@@ -1,3 +1,249 @@
 /* Your styles go here */
-@import "bootstrap/scss/bootstrap.scss";
-@import "bootstrap-icons/font/bootstrap-icons.css";
+// @import "bootstrap/scss/bootstrap.scss";
+// @import "bootstrap-icons/font/bootstrap-icons.css";
+
+// THEME COLORS
+
+
+
+// WHITE / GREY
+
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+
+$primary: #0D1B2A;
+$secondary: #1B263B;
+$teritary: #354E7B; 
+$accent: #E63946;
+$light: #f6f6f6;
+
+
+@import "bootstrap/scss/bootstrap"; 
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+// typography
+
+.title {
+    color: $primary;
+    text-align: center;
+}
+
+.hero-text {
+    font-weight: 600;
+}
+
+.text-accent {
+    color: $accent;
+}
+
+
+// navigation
+
+nav {
+    background-color: $primary;
+  
+    .nav-link {
+      color: $light;
+  
+      &:hover {
+        color: $accent;
+      }
+    }
+}
+
+// hero 
+
+.hero-section {
+    background-image: url("../images/hero-car.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+// how it works
+
+#how-it-works .card {
+    border: 0;
+    border-radius: 1rem;   
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    background-color: #fff;
+}
+  
+#how-it-works .card h3 {
+    color: $accent;        
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+
+// advantages
+
+#advantages .card {
+    border: 0;
+    border-radius: 1rem;   
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    background-color: #fff;
+}
+  
+  #advantages .card i {
+    color: $accent;        
+    margin-bottom: 0.75rem;
+}
+
+
+// testimonials
+
+#testimonials .carousel-indicators {
+    display: none;
+}
+  
+#testimonials blockquote {
+    font-style: italic;
+    font-size: 1.25rem;  
+    line-height: 1.7;
+    text-align: center;     
+}
+  
+  #testimonials .t-name {
+    font-size: 1.1rem;
+    text-align: center;
+}
+  
+  #testimonials .t-stars {
+    font-size: 1.2rem;   
+    text-align: center;
+    color: $accent; 
+}
+
+// selling point
+
+#selling-point {
+    background: linear-gradient(145deg, rgba(27, 38, 59, 1) 0%, rgba(93, 136, 217, 1) 89%);
+    color: #fff;
+    padding-top: 6rem;      
+    padding-bottom: 6rem;   
+}    
+  #selling-point h2 {
+    font-weight: 700;
+}
+  
+  #selling-point p {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+ 
+
+// recent purchases
+
+#recent-purchases .card {
+    border: 2px solid $accent;   
+    border-radius: .5rem;      
+    box-shadow: none;           
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+  
+
+
+
+
+  
+  
+  
+
+// accordion
+  
+#accordionExample .accordion-button {
+    padding: 1.25rem 1.5rem;     
+}
+
+#accordionExample .accordion-button:not(.collapsed) {
+    background-color: $accent;   
+    color: #fff;                
+}
+  
+  #accordionExample .accordion-button:not(.collapsed)::after {
+    filter: invert(1);           
+}
+
+  
+
+// button
+
+.btn-brand {
+    background-color: $accent;
+    color: $secondary;
+    border: none;
+    border-radius: .5rem;
+  
+    &:hover {
+      background-color: darken($accent, 12%);
+      color: $secondary;
+      outline: none;
+      box-shadow: none;
+    } 
+}
+
+
+// footer 
+
+.site-footer {
+    background-color: $primary; 
+    color: $light;
+    width: 100%;
+  }
+  
+  .site-footer a {
+    color: $light; text-decoration: none; 
+    }   
+  .site-footer a:hover {
+    color: $accent; 
+    }
+  
+  html, body {
+    height: 100%;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .site-footer {
+    margin-top: auto;  
+  }
+
+
+  // spacing class
+.spacing {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  
+  @media (min-width: 992px) {
+    .spacing {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+  }
+  
+  
